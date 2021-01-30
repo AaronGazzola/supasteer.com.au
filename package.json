@@ -1,0 +1,45 @@
+{
+  "name": "supasteer.com.au",
+  "version": "1.0.0",
+  "description": "Business information and image gallery website for SupaSteer Australia",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AaronGazzola/supasteer.com.au.git"
+  },
+  "keywords": [
+    "SupaSteer",
+    "Australia",
+    "supa",
+    "steer",
+    "power",
+    "steering",
+    "powersteering"
+  ],
+  "author": "Aaron Gazzola",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/AaronGazzola/supasteer.com.au/issues"
+  },
+  "homepage": "https://github.com/AaronGazzola/supasteer.com.au#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.2",
+    "express-rate-limit": "^5.2.3",
+    "helmet": "^4.4.1",
+    "hpp": "^0.2.3",
+    "morgan": "^1.10.0",
+    "xss-clean": "^0.1.1"
+  }
+}
