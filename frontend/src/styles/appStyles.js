@@ -32,7 +32,8 @@ const styles = makeStyles(theme => ({
 	toolBar: {
 		height: appBarHeight,
 		backgroundColor: theme.palette.grey[300],
-		width: '100%'
+		width: '100%',
+		paddingLeft: 24
 	},
 	drawer: {
 		width: drawerWidth,

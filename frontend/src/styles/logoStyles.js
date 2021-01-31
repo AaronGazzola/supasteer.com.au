@@ -8,7 +8,8 @@ const styles = makeStyles(theme => ({
 		'&:hover': {
 			cursor: 'pointer'
 		},
-		animation: '$resize 1s ease 3s backwards'
+		animation: '$resize 1s ease 4s backwards',
+		overflow: 'visible'
 	},
 	title: {
 		fontSize: '30px',
@@ -28,9 +29,34 @@ const styles = makeStyles(theme => ({
 		right: 0,
 		bottom: 0,
 		backgroundColor: theme.palette.grey[300],
-		animation: '$fade 1s ease-out 3s backwards'
+		animation: '$fade-out 1s ease-out 4s backwards'
 	},
-	'@keyframes fade': {
+	shape1: {
+		animation: '$slide .5s ease-out .5s backwards '
+	},
+	shape2: {
+		animation: '$slide .5s ease-out .9s backwards '
+	},
+	shape3: {
+		animation: '$slide .5s ease-out 1.3s backwards '
+	},
+	title1: {
+		animation: '$slide .5s ease-out 2s backwards '
+	},
+	title2: {
+		animation: '$slide .5s ease-out 2.5s backwards '
+	},
+	'@keyframes slide': {
+		'0%': {
+			transform: 'translateX(-10%)',
+			opacity: 0
+		},
+		'100%': {
+			transform: 'translateX(0%)',
+			opacity: 1
+		}
+	},
+	'@keyframes fade-out': {
 		'0%': {
 			opacity: 1,
 			zIndex: 2
@@ -46,9 +72,11 @@ const styles = makeStyles(theme => ({
 			top: '50%',
 			left: '50%',
 			height: '50vh',
-			transform: 'translate(-50%, -50%)'
+			maxWidth: '100vw',
+			transform: 'translate(-40%, -50%)'
 		},
 		'100%': {
+			maxWidth: '100vw',
 			position: 'fixed',
 			top: 0,
 			left: 24,

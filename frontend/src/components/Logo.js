@@ -11,6 +11,7 @@ const Logo = ({ animated = true }) => {
 			<svg viewBox='0 0 200 100' className={classes.logo}>
 				<path
 					fill='#48aa43'
+					className={classes.shape1}
 					d='
      M 0 10
   L 25 10
@@ -21,6 +22,7 @@ const Logo = ({ animated = true }) => {
 				></path>
 				<path
 					fill='#0397d7'
+					className={classes.shape2}
 					d='
      M 33 10
   L 58 10
@@ -30,6 +32,7 @@ const Logo = ({ animated = true }) => {
   '
 				></path>
 				<path
+					className={classes.shape3}
 					fill='#969ba1'
 					d='
      M 66 10
@@ -40,7 +43,7 @@ const Logo = ({ animated = true }) => {
   '
 				></path>
 				<path
-					className={classes.textBox}
+					className={clsx(classes.textBox, classes.title1)}
 					d='
      M 0 17
   L 125 17
@@ -50,7 +53,7 @@ const Logo = ({ animated = true }) => {
   '
 				></path>
 				<path
-					className={classes.textBox}
+					className={clsx(classes.textBox, classes.title2)}
 					d='
      M 43 52
   L 165 52
