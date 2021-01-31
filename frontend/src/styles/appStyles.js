@@ -30,7 +30,7 @@ const styles = makeStyles(theme => ({
 		width: '100%'
 	},
 	toolBar: {
-		minHeight: appBarHeight,
+		height: appBarHeight,
 		backgroundColor: theme.palette.grey[300],
 		width: '100%'
 	},
