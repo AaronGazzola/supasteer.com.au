@@ -30,6 +30,7 @@ const styles = makeStyles(theme => ({
 		width: '100%'
 	},
 	toolBar: {
+		position: 'relative',
 		height: appBarHeight,
 		backgroundColor: theme.palette.grey[300],
 		width: '100%',

@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
-import { AppBar, Drawer, Toolbar, useMediaQuery } from '@material-ui/core';
+import {
+	AppBar,
+	Drawer,
+	Tabs,
+	Toolbar,
+	useMediaQuery
+} from '@material-ui/core';
 import Logo from 'components/Logo';
+import NavTabs from 'components/NavTabs';
 import styles from 'styles/appStyles';
 
 const useStyles = styles;
@@ -24,6 +31,7 @@ const Header = () => {
 			<AppBar position='fixed' className={classes.appBar}>
 				<Toolbar disableGutters className={classes.toolBar}>
 					<Logo />
+					<NavTabs />
 				</Toolbar>
 			</AppBar>
 			{matchesXs && (
