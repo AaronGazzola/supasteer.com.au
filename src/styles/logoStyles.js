@@ -2,14 +2,16 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const styles = makeStyles(theme => ({
 	logo: {
-		position: 'relative',
-		height: '100%',
+		position: 'absolute',
+		left: '50%',
+		height: 90,
 		zIndex: 3,
 		'&:hover': {
 			cursor: 'pointer'
 		},
 		overflow: 'visible',
-		animation: '$resize 1s ease 4s backwards'
+		animation: '$resize 1s ease 4s backwards',
+		transform: 'translate(-40%, 0%)'
 	},
 	title: {
 		fontSize: '30px',
@@ -79,9 +81,8 @@ const styles = makeStyles(theme => ({
 			maxWidth: '100vw',
 			position: 'fixed',
 			top: 0,
-			left: 24,
-			height: 90,
-			transform: 'translate(0%, 0%)'
+			left: '50%',
+			height: 90
 		}
 	}
 }));

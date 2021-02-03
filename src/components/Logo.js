@@ -1,14 +1,23 @@
 import React from 'react';
 import styles from 'styles/logoStyles';
 import clsx from 'clsx';
+import { useHistory } from 'react-router-dom';
 
 const useStyles = styles;
 
-const Logo = ({ animated = true }) => {
+const Logo = ({ handleTabChange }) => {
 	const classes = useStyles();
+	const history = useHistory();
 	return (
 		<>
-			<svg viewBox='0 0 200 100' className={classes.logo}>
+			<svg
+				onClick={e => {
+					history.push('/');
+					handleTabChange(e, 0);
+				}}
+				viewBox='0 0 200 100'
+				className={classes.logo}
+			>
 				<path
 					fill='#48aa43'
 					className={classes.shape1}
