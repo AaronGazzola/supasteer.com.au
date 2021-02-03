@@ -8,8 +8,8 @@ const styles = makeStyles(theme => ({
 		'&:hover': {
 			cursor: 'pointer'
 		},
-		animation: '$resize 1s ease 4s backwards',
-		overflow: 'visible'
+		overflow: 'visible',
+		animation: '$resize 1s ease 4s backwards'
 	},
 	title: {
 		fontSize: '30px',
@@ -29,7 +29,7 @@ const styles = makeStyles(theme => ({
 		right: 0,
 		bottom: 0,
 		backgroundColor: theme.palette.grey[300],
-		animation: '$fade-out 1s ease-out 4s backwards'
+		animation: '$fade-out 1s ease-out 5s backwards'
 	},
 	shape1: {
 		animation: '$slide .5s ease-out .5s backwards '
