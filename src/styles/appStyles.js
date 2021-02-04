@@ -51,7 +51,16 @@ const styles = makeStyles(theme => ({
 		display: 'flex',
 		flexDirection: 'column',
 		justifyContent: 'center',
-		alignItems: 'center'
+		alignItems: 'center',
+		'& p': {
+			color: theme.palette.grey[700]
+		},
+		'& a': {
+			color: '#a63600',
+			'&:hover': {
+				color: '#309772'
+			}
+		}
 	}
 }));
 

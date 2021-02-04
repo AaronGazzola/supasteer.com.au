@@ -8,10 +8,11 @@ const Footer = () => {
 	const classes = useStyles();
 	return (
 		<footer className={classes.footer}>
-			<Typography>
-				Designed and Developed by <a href='apexapps.dev'>Apex Apps</a>
+			<Typography variant='body2'>
+				Designed and Developed by{' '}
+				<a href='https://www.apexapps.dev'>Apex Apps</a>
 			</Typography>
-			<Typography>
+			<Typography variant='body2'>
 				Copyright &copy; {new Date().getFullYear()} SupaSteer Australia
 			</Typography>
 		</footer>
