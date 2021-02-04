@@ -22,16 +22,15 @@ const styles = makeStyles(theme => ({
 		fill: theme.palette.grey[300]
 	},
 	backDrop: {
+		zIndex: 2,
 		position: 'fixed',
-		// display: 'none',
-		zIndex: -10,
-		opacity: 0,
+		opacity: 1,
 		left: 0,
 		top: 0,
 		right: 0,
 		bottom: 0,
 		backgroundColor: theme.palette.grey[300],
-		animation: '$fade-out 1s ease-out 5s backwards'
+		animation: '$fade-out 1s ease-out 5s forwards'
 	},
 	shape1: {
 		animation: '$slide .5s ease-out .5s backwards '
@@ -60,12 +59,25 @@ const styles = makeStyles(theme => ({
 	},
 	'@keyframes fade-out': {
 		'0%': {
-			opacity: 1,
-			zIndex: 2
+			left: 0,
+			top: 0,
+			right: 0,
+			bottom: 0,
+			opacity: 1
+		},
+		'99%': {
+			opacity: 0,
+			left: 0,
+			top: 0,
+			right: 0,
+			bottom: 0
 		},
 		'100%': {
-			zIndex: 2,
-			opacity: 0
+			opacity: 0,
+			left: 0,
+			top: 0,
+			right: '100%',
+			bottom: '100%'
 		}
 	},
 	'@keyframes resize': {
