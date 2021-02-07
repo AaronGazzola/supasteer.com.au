@@ -7,22 +7,15 @@ const styles = makeStyles(theme => ({
 		top: '50%',
 		transform: 'translate(-50%, -50%)'
 	},
-	indicator: {
-		backgroundColor: theme.palette.primary.main
-	},
 	spacer: {
 		width: 180
 	},
-	tabsRoot: {
-		'& .MuiTab-root': {
-			fontWeight: 600
+	tab: {
+		fontWeight: 600,
+		[theme.breakpoints.down('md')]: {
+			minWidth: 120,
+			maxWidth: 120
 		}
-		// '& .MuiTab-root': {
-		// 	color: theme.palette.grey[700]
-		// },
-		// '& .Mui-selected': {
-		// 	color: theme.palette.primary.main
-		// }
 	}
 }));
 

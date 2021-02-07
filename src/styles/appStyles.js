@@ -61,6 +61,21 @@ const styles = makeStyles(theme => ({
 				color: '#309772'
 			}
 		}
+	},
+	drawerHeader: {
+		display: 'flex',
+		alignItems: 'center',
+		padding: theme.spacing(1),
+		// necessary for content to be below app bar
+		...theme.mixins.toolbar,
+		justifyContent: 'flex-end'
+	},
+	drawerNavButton: {
+		color: theme.palette.primary.main,
+		'&.Mui-selected': {
+			backgroundColor: theme.palette.primary.light,
+			color: '#fff'
+		}
 	}
 }));
 

@@ -10,7 +10,7 @@ const styles = makeStyles(theme => ({
 			cursor: 'pointer'
 		},
 		overflow: 'visible',
-		animation: '$resize 1s ease 4s backwards',
+		animation: '$resize 1s ease 2.5s backwards',
 		transform: 'translate(-40%, 0%)'
 	},
 	title: {
@@ -30,7 +30,7 @@ const styles = makeStyles(theme => ({
 		right: 0,
 		bottom: 0,
 		backgroundColor: theme.palette.grey[300],
-		animation: '$fade-out 1s ease-out 5s forwards'
+		animation: '$fade-out 1s ease-out 3.5s forwards'
 	},
 	shape1: {
 		animation: '$slide .5s ease-out .5s backwards '
@@ -42,10 +42,10 @@ const styles = makeStyles(theme => ({
 		animation: '$slide .5s ease-out 1.3s backwards '
 	},
 	title1: {
-		animation: '$slide .5s ease-out 2s backwards '
+		animation: '$slide .5s ease-out 1.6s backwards '
 	},
 	title2: {
-		animation: '$slide .5s ease-out 2.5s backwards '
+		animation: '$slide .5s ease-out 1.9s backwards '
 	},
 	'@keyframes slide': {
 		'0%': {
