@@ -1,7 +1,53 @@
 import React from 'react';
+import { Paper, Typography } from '@material-ui/core';
+import styles from 'styles/contentStyles';
+
+const useStyles = styles;
 
 const HomeScreen = () => {
-	return <div>Home</div>;
+	const classes = useStyles();
+	return (
+		<>
+			<Typography variant='h1' className={classes.title}>
+				About SupaSteer
+			</Typography>
+			<Paper variant='outlined' className={classes.paper}>
+				<Typography variant='h5' className={classes.subTitle}>
+					Steering Australia Since 1989
+				</Typography>
+				<Typography className={classes.paragraph}>
+					SupaSteer Pty Ltd has been operating in the Eastern Suburbs of
+					Melbourne since 1989. For over 30 years we have been supplying
+					Australia with the best Power Steering products and services.
+				</Typography>
+			</Paper>
+			<Paper variant='outlined' className={classes.paper}>
+				<Typography variant='h5' className={classes.subTitle}>
+					The Steering Specialists
+				</Typography>
+				<Typography className={classes.paragraph}>
+					We supply workshops, dealerships and spare parts outlets throughout
+					Victoria with high quality and high value-for-money reconditioned
+					exchange steering units.
+					<br />
+					<br />
+					We have a vast range of approximately 600 units on the shelf - ready
+					for dispatch. From the common types of Holden and Ford, to the more
+					exotic BMW, SAAB, Toyota, Nissan, Hyundai and many more.
+					<br />
+					<br />
+					In the very rare situation that we don't have the unit you require on
+					the shelf, we can often overhaul yours and have it on its way back to
+					you within 24 hours.
+				</Typography>
+			</Paper>
+			<img
+				className={classes.mrPowerPhoto}
+				src='/images/mrPowerSteering.jpg'
+				alt='Mr. Power Steering'
+			/>
+		</>
+	);
 };
 
 export default HomeScreen;

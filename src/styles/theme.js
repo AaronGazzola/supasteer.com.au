@@ -66,23 +66,28 @@ export const getTheme = () =>
 			fontFamily: "'Noto Sans', sans-serif",
 			h1: {
 				fontFamily: "'Roboto', sans-serif",
-				fontWeight: 300,
+				fontWeight: 100,
 				fontSize: '4rem'
 			},
 			h2: {
 				fontFamily: "'Roboto', sans-serif",
-				fontWeight: 300,
+				fontWeight: 100,
 				fontSize: '4rem'
 			},
 			h3: {
 				fontFamily: "'Roboto', sans-serif",
-				fontWeight: 300,
+				fontWeight: 100,
 				fontSize: '3rem'
 			},
 			h4: {
 				fontFamily: "'Roboto', sans-serif",
-				fontWeight: 300,
+				fontWeight: 100,
 				fontSize: '2.5rem'
+			},
+			h5: {
+				fontFamily: "'Roboto', sans-serif",
+				fontWeight: 100,
+				fontSize: '1.5rem'
 			}
 		}
 	});

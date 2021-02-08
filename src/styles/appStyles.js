@@ -9,6 +9,7 @@ const styles = makeStyles(theme => ({
 		position: 'relative',
 		display: 'flex',
 		flexDirection: 'column',
+		alignItems: 'center',
 		flexGrow: 1,
 		margin: '0 auto',
 		padding: 0,
@@ -16,14 +17,14 @@ const styles = makeStyles(theme => ({
 		marginTop: appBarHeight,
 		minHeight: `calc(100vh - ${appBarHeight + footerHeight}px)`,
 		width: '100%',
-		maxWidth: 1220,
+		maxWidth: 900,
+		backgroundColor: '#fff',
 		[theme.breakpoints.down('md')]: {
-			maxWidth: 900
+			maxWidth: 800
 		},
 		[theme.breakpoints.down('sm')]: {
 			maxWidth: 600
 		}
-		// backgroundColor: '#fff'
 	},
 	appBar: {
 		backgroundColor: theme.palette.grey[300],
