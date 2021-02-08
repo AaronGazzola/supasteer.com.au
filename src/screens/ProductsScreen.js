@@ -109,6 +109,41 @@ const ProductsScreen = () => {
 					<img className={classes.partPhoto} src='/images/show.jpg' />
 				</Grid>
 			</Grid>
+			<Paper variant='outlined' className={classes.paper}>
+				<Typography variant='h5' className={classes.subTitle}>
+					Warranty
+				</Typography>
+				<Typography className={classes.paragraph}>
+					We offer an Australia wide 12 Month Warranty. <br />
+					We are an authorised VACC approved repairer and a preferred Capricorn
+					Society supplier, which all adds up to 100% complete peace of mind.
+				</Typography>
+			</Paper>
+			<Paper variant='outlined' className={classes.paper}>
+				<Typography variant='h5' className={classes.subTitle}>
+					Delivery
+				</Typography>
+				<Typography className={classes.paragraph}>
+					We have a local delivery service that runs 5 days per week and are
+					able to dispatch goods by road or air daily, including interstate or
+					rural Victoria destinations.
+				</Typography>
+			</Paper>
+			<Grid
+				container
+				spacing={2}
+				className={classes.imageGrid}
+				alignItems='center'
+				justify='center'
+				direction='row'
+			>
+				<Grid item>
+					<img src='/images/VACCLogo.jpg' />
+				</Grid>
+				<Grid item>
+					<img src='/images/CapricornLogo.jpg' />
+				</Grid>
+			</Grid>
 		</>
 	);
 };
