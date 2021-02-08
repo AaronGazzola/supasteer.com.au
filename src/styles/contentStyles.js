@@ -5,6 +5,9 @@ const styles = makeStyles(theme => ({
 		marginTop: theme.spacing(1),
 		fontWeight: 100,
 		color: theme.palette.grey[800],
+		textAlign: 'center',
+		paddingLeft: theme.spacing(1),
+		paddingRight: theme.spacing(1),
 		[theme.breakpoints.down('sm')]: {
 			fontSize: '3rem',
 			marginTop: theme.spacing(2)
