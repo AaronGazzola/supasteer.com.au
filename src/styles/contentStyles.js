@@ -36,6 +36,20 @@ const styles = makeStyles(theme => ({
 			width: '85%'
 		}
 	},
+	list: {
+		listStyle: 'circle',
+		'& span': {
+			fontStyle: 'italic'
+		}
+	},
+	partPhoto: {
+		borderRadius: '5px',
+		boxShadow: '2px 2px 2px rgba(0,0,0,0.5)'
+	},
+	imageGrid: {
+		maxWidth: '90%',
+		marginTop: theme.spacing(2)
+	},
 	mrPowerPhoto: {
 		marginTop: theme.spacing(3),
 		marginBottom: -theme.spacing(3),
