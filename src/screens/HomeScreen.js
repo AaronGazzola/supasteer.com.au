@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Paper, Typography } from '@material-ui/core';
 import styles from 'styles/contentStyles';
 
 const useStyles = styles;
 
 const HomeScreen = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	const classes = useStyles();
 	return (
 		<>

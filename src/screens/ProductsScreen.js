@@ -1,11 +1,14 @@
+import React, { useEffect } from 'react';
 import { Grid, Paper, Typography } from '@material-ui/core';
-import React from 'react';
 import styles from 'styles/contentStyles';
 
 const useStyles = styles;
 
 const ProductsScreen = () => {
 	const classes = useStyles();
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<>
 			<Typography variant='h1' className={classes.title}>
