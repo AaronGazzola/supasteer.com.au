@@ -59,10 +59,18 @@ const ProductsScreen = () => {
 				direction='row'
 			>
 				<Grid item>
-					<img className={classes.partPhoto} src='/images/rack1.jpg' />
+					<img
+						alt='Power Steering Rack'
+						className={classes.partPhoto}
+						src='/images/rack1.jpg'
+					/>
 				</Grid>
 				<Grid item>
-					<img className={classes.partPhoto} src='/images/box1.jpg' />
+					<img
+						alt='Power Steering Box'
+						className={classes.partPhoto}
+						src='/images/box1.jpg'
+					/>
 				</Grid>
 			</Grid>
 			<Paper variant='outlined' className={classes.paper}>
@@ -82,10 +90,18 @@ const ProductsScreen = () => {
 				direction='row'
 			>
 				<Grid item>
-					<img className={classes.partPhoto} src='/images/box2.jpg' />
+					<img
+						alt='Power Steering Box'
+						className={classes.partPhoto}
+						src='/images/box2.jpg'
+					/>
 				</Grid>
 				<Grid item>
-					<img className={classes.partPhoto} src='/images/box3.jpg' />
+					<img
+						alt='Power Steering Box'
+						className={classes.partPhoto}
+						src='/images/box3.jpg'
+					/>
 				</Grid>
 			</Grid>
 			<Paper variant='outlined' className={classes.paper}>
@@ -106,7 +122,11 @@ const ProductsScreen = () => {
 				direction='row'
 			>
 				<Grid item>
-					<img className={classes.partPhoto} src='/images/show.jpg' />
+					<img
+						alt='SupaSteer Show Display'
+						className={classes.partPhoto}
+						src='/images/show.jpg'
+					/>
 				</Grid>
 			</Grid>
 			<Paper variant='outlined' className={classes.paper}>
@@ -138,10 +158,10 @@ const ProductsScreen = () => {
 				direction='row'
 			>
 				<Grid item>
-					<img src='/images/VACCLogo.jpg' />
+					<img alt='VACC Logo' src='/images/VACCLogo.jpg' />
 				</Grid>
 				<Grid item>
-					<img src='/images/CapricornLogo.jpg' />
+					<img alt='Capricorn Logo' src='/images/CapricornLogo.jpg' />
 				</Grid>
 			</Grid>
 		</>

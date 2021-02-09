@@ -40,6 +40,8 @@ const Header = () => {
 			case '/contact':
 				setTabValue(4);
 				break;
+			default:
+				break;
 		}
 	}, [location.pathname]);
 

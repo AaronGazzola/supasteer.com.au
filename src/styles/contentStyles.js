@@ -52,7 +52,7 @@ const styles = makeStyles(theme => ({
 	},
 	mrPowerPhoto: {
 		marginTop: theme.spacing(3),
-		marginBottom: -theme.spacing(3),
+		marginBottom: -24,
 		maxWidth: '100%'
 	},
 	bold: {

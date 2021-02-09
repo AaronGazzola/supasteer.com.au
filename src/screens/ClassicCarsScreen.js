@@ -42,13 +42,25 @@ const ContactUsScreen = () => {
 				direction='row'
 			>
 				<Grid item>
-					<img className={classes.partPhoto} src='/images/classicCar3.jpg' />
+					<img
+						alt='Ford Mustang'
+						className={classes.partPhoto}
+						src='/images/classicCar3.jpg'
+					/>
 				</Grid>
 				<Grid item>
-					<img className={classes.partPhoto} src='/images/classicCar2.jpg' />
+					<img
+						alt='Holden StatesMan'
+						className={classes.partPhoto}
+						src='/images/classicCar2.jpg'
+					/>
 				</Grid>
 				<Grid item>
-					<img className={classes.partPhoto} src='/images/classicCar1.jpg' />
+					<img
+						alt='Award Winning AC Cobra'
+						className={classes.partPhoto}
+						src='/images/classicCar1.jpg'
+					/>
 				</Grid>
 			</Grid>
 		</>

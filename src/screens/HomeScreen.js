@@ -64,7 +64,7 @@ const HomeScreen = () => {
 					</IconButton>
 				</Typography>
 			</Grid>
-			<Link to='/contact'>
+			<Link style={{ margin: 0, padding: 0 }} to='/contact'>
 				<img
 					className={classes.mrPowerPhoto}
 					src='/images/mrPowerSteering.jpg'
