@@ -12,7 +12,9 @@ const styles = makeStyles(theme => ({
 			cursor: 'pointer'
 		},
 		overflow: 'visible',
-		transform: 'translate(-40%, 0%)',
+		transform: 'translate(-40%, 0%)'
+	},
+	resize: {
 		animation: '$resize 1s ease 3.3s backwards'
 	},
 	title: {

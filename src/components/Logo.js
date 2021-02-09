@@ -2,6 +2,7 @@ import React from 'react';
 import styles from 'styles/logoStyles';
 import clsx from 'clsx';
 import { useHistory } from 'react-router-dom';
+import { isIE } from 'react-device-detect';
 
 const useStyles = styles;
 
@@ -16,7 +17,7 @@ const Logo = ({ handleTabChange }) => {
 					handleTabChange(e, 0);
 				}}
 				viewBox='0 0 200 100'
-				className={classes.logo}
+				className={isIE ? classes.logo : clsx(classes.logo, classes.resize)}
 			>
 				<path
 					fill='#48aa43'
@@ -88,7 +89,7 @@ const Logo = ({ handleTabChange }) => {
 					AUSTRALIA
 				</text>
 			</svg>
-			<div className={classes.backDrop}></div>
+			{!isIE && <div className={classes.backDrop}></div>}
 		</>
 	);
 };
