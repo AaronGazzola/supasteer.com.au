@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
-import { Paper, Typography } from '@material-ui/core';
+import { Paper, Typography, Grid, IconButton } from '@material-ui/core';
 import styles from 'styles/contentStyles';
+import { Link } from 'react-router-dom';
+import { Phone as PhoneIcon } from '@material-ui/icons';
 
 const useStyles = styles;
 
@@ -44,11 +46,31 @@ const HomeScreen = () => {
 					you within 24 hours.
 				</Typography>
 			</Paper>
-			<img
-				className={classes.mrPowerPhoto}
-				src='/images/mrPowerSteering.jpg'
-				alt='Mr. Power Steering'
-			/>
+			<Grid className={classes.signatureGrid} alignItems='flex-start' container>
+				<Typography className={classes.signatureText}>
+					Need a question answered or have an enquiry?
+				</Typography>
+				<Typography className={classes.signatureText2}>
+					Call Marty Gazzola, aka:
+				</Typography>
+				<Typography className={classes.signature}>
+					Mr.Power Steering
+					<IconButton
+						component={Link}
+						to='/contact'
+						className={classes.phoneButton}
+					>
+						<PhoneIcon size='large' color='secondary' />
+					</IconButton>
+				</Typography>
+			</Grid>
+			<Link to='/contact'>
+				<img
+					className={classes.mrPowerPhoto}
+					src='/images/mrPowerSteering.jpg'
+					alt='Mr. Power Steering'
+				/>
+			</Link>
 		</>
 	);
 };

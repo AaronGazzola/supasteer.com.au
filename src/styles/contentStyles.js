@@ -54,6 +54,44 @@ const styles = makeStyles(theme => ({
 		marginTop: theme.spacing(3),
 		marginBottom: -theme.spacing(3),
 		maxWidth: '100%'
+	},
+	bold: {
+		fontWeight: 'bold'
+	},
+	signatureGrid: {
+		width: 700,
+		[theme.breakpoints.down('md')]: {
+			width: 600
+		},
+		[theme.breakpoints.down('sm')]: {
+			width: 500
+		},
+		[theme.breakpoints.down('xs')]: {
+			width: '85%'
+		}
+	},
+	signatureText: {
+		marginTop: theme.spacing(4),
+		marginLeft: theme.spacing(4),
+		width: '100%'
+	},
+	signatureText2: {
+		width: '100%',
+		marginLeft: theme.spacing(5)
+	},
+	signature: {
+		width: '100%',
+		marginLeft: theme.spacing(5),
+		marginTop: theme.spacing(2),
+		fontFamily: "'Yellowtail', 'Noto Sans', sans-serif",
+		fontSize: '2rem',
+		[theme.breakpoints.down('sm')]: {
+			fontSize: '1.5rem'
+		}
+	},
+	phoneButton: {
+		marginLeft: theme.spacing(2),
+		border: `1px solid ${theme.palette.secondary.main}`
 	}
 }));
 
