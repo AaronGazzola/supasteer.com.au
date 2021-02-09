@@ -183,6 +183,7 @@ module.exports = function (webpackEnv) {
 						//
 						// When using the experimental react-refresh integration,
 						// the webpack plugin takes care of injecting the dev client for us.
+						'babel-polyfill',
 						webpackDevClientEntry,
 						// Finally, this is your app's code:
 						paths.appIndexJs

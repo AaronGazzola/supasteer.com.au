@@ -60,7 +60,7 @@ const HomeScreen = () => {
 						to='/contact'
 						className={classes.phoneButton}
 					>
-						<PhoneIcon size='large' color='secondary' />
+						<PhoneIcon color='secondary' />
 					</IconButton>
 				</Typography>
 			</Grid>

@@ -91,7 +91,7 @@ const styles = makeStyles(theme => ({
 	},
 	phoneButton: {
 		marginLeft: theme.spacing(2),
-		border: `1px solid ${theme.palette.secondary.main}`
+		border: `1px solid ${theme.palette.secondary.light}`
 	}
 }));
 
