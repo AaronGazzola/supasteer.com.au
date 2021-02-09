@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
 	AppBar,
 	Drawer,
@@ -17,13 +17,31 @@ import {
 import Logo from 'components/Logo';
 import NavTabs from 'components/NavTabs';
 import styles from 'styles/appStyles';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const useStyles = styles;
 
 const Header = () => {
+	const location = useLocation();
 	const classes = useStyles();
 	const matches680 = useMediaQuery('(max-width:680px)');
+
+	useEffect(() => {
+		switch (location.pathname) {
+			case '/':
+				setTabValue(0);
+				break;
+			case '/products':
+				setTabValue(1);
+				break;
+			case '/cars':
+				setTabValue(3);
+				break;
+			case '/contact':
+				setTabValue(4);
+				break;
+		}
+	}, [location.pathname]);
 
 	const [drawerIsOpen, setDrawerIsOpen] = useState(false);
 	const [tabValue, setTabValue] = useState(0);
