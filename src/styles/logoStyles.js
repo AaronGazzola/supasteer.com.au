@@ -12,8 +12,8 @@ const styles = makeStyles(theme => ({
 			cursor: 'pointer'
 		},
 		overflow: 'visible',
-		animation: '$resize 1s ease 3.3s backwards',
-		transform: 'translate(-40%, 0%)'
+		transform: 'translate(-40%, 0%)',
+		animation: '$resize 1s ease 3.3s backwards'
 	},
 	title: {
 		fontSize: '30px',
@@ -87,16 +87,17 @@ const styles = makeStyles(theme => ({
 			position: 'fixed',
 			top: '50%',
 			left: '50%',
-			height: '50vh',
-			maxWidth: '100vw',
+			height: '50%',
+			maxWidth: '100%',
 			transform: 'translate(-40%, -50%)'
 		},
 		'100%': {
-			maxWidth: '100vw',
 			position: 'fixed',
 			top: 0,
 			left: '50%',
-			height: 90
+			maxWidth: '100%',
+			height: 90,
+			transform: 'translate(-40%, 0%)'
 		}
 	}
 }));
