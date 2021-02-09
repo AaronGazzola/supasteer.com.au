@@ -31,24 +31,24 @@ const ProductsScreen = () => {
 				<Typography className={classes.paragraph}>
 					The re-manufacturing process of a Power Steering Rack and Pinion
 					includes, at minimum:
-					<ul className={classes.list}>
-						<li>
-							<span>New</span> Rack Ends
-						</li>
-						<li>
-							<span>New</span> Boots and Boot Clips
-						</li>
-						<li>
-							<span>New</span> O-rings
-						</li>
-						<li>
-							<span>New</span> Teflons
-						</li>
-						<li>
-							<span>New</span> Bearings
-						</li>
-					</ul>
 				</Typography>
+				<ul className={classes.list}>
+					<li>
+						<span>New</span> Rack Ends
+					</li>
+					<li>
+						<span>New</span> Boots and Boot Clips
+					</li>
+					<li>
+						<span>New</span> O-rings
+					</li>
+					<li>
+						<span>New</span> Teflons
+					</li>
+					<li>
+						<span>New</span> Bearings
+					</li>
+				</ul>
 			</Paper>
 			<Grid
 				container

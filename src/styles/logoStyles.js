@@ -2,8 +2,10 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const styles = makeStyles(theme => ({
 	logo: {
-		position: 'absolute',
+		position: 'fixed',
 		left: '50%',
+		maxWidth: 180,
+		top: 0,
 		height: 90,
 		zIndex: 3,
 		'&:hover': {
